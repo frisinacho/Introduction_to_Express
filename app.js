@@ -1,12 +1,16 @@
 var express = require('express');
 var app = express();
  
-app.get('/', function(request, response) {
-    response.send("This would be some HTML");
+app.get('/', function(req, res) {
+    res.sendfile('./views/index.html');
 });
-
-app.get('/api', function(request, response) {
-    response.send({name:"Nacho",age:25});
+ 
+app.get('/about', function(req, res) {
+    res.sendfile('./views/about.html');
 });
-
+ 
+app.get('/article', function(req, res) {
+    res.sendfile('./views/article.html');
+});
+ 
 app.listen(3000);
