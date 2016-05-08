@@ -1,8 +1,9 @@
 {
-    "name": "blog1",
-    "description": "First Blog Express app",
-    "version": "0.0.2",
+    "name": "blog2",
+    "description": "Blog app",
+    "version": "0.0.1",
     "dependencies": {
-        "express": "3.x"
+        "express": "3.x",
+        "hbs":"*"
     }
 }
